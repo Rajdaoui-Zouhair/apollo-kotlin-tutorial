@@ -1,8 +1,10 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
     id("com.apollographql.apollo3").version("3.3.2")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -18,6 +20,7 @@ android {
     
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
     compileOptions {
@@ -47,8 +50,13 @@ dependencies {
     implementation("androidx.paging:paging-runtime-ktx:3.1.1")
 
     implementation("androidx.security:security-crypto:1.1.0-alpha03")
-    implementation("om.apollographql.apollo3:apollo-runtime:3.3.2")
+    implementation("com.apollographql.apollo3:apollo-runtime:3.3.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.8.0")
     implementation("io.coil-kt:coil:1.4.0")
+
+    // di: hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

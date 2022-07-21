@@ -1,4 +1,4 @@
-package com.example.rocketreserver
+package com.example.rocketreserver.core
 
 import android.content.Context
 import android.content.SharedPreferences
