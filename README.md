@@ -16,5 +16,5 @@ This repo has two branches:
   the application with all functionality
 * [initial](https://github.com/Rajdaoui-Zouhair/apollo-kotlin-tutorial/tree/initial) is the starter
   project with the boilerplate and UI code already written but no Apollo Kotlin code.
-* [my-solution](https://github.com/Rajdaoui-Zouhair/apollo-kotlin-tutorial/tree/my-solution) is the
-  my solution to the tutorial
+* [my-solution](https://github.com/Rajdaoui-Zouhair/apollo-kotlin-tutorial/tree/my-solution) is my
+  solution to the tutorial
